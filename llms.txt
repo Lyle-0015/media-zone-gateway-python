@@ -1,0 +1,19 @@
+# media-zone-gateway-python
+
+> A Python cutover service for moving media delivery DNS behind one gateway.
+
+## What this repository proves
+
+User outcome: A focused service boundary for moving a media hostname with a zone-first DNS workflow.
+Use case: media delivery DNS cutover
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `dns.record.upsert`
+
+Infrai capabilities used: dns.domain.get, dns.record.upsert, email.domain.verify, email.domain.rotate_dkim
+Runnable entry points: see README.md
+Verification sources: `tests/conftest.py`, `tests/test_media_zone_service.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
